@@ -1,4 +1,9 @@
 en:
+  shared:
+    errors: "The form contains "
+    errors_count:
+      one: "1 error."
+      other: "%{count} errors."
   layouts:
     footer:
       paragraph1: "The "
@@ -21,6 +26,15 @@ en:
       title: "Sign up"
       heading: "Sign up"
       paragraph: "This will be a signup page for new users."
+      button: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+    create:
+      flash_success: "Welcome to the Sample App!"
+    show:
+      flash_success: "User not found!"
   static_pages:
     home:
       title: "Home"
@@ -52,5 +66,5 @@ en:
       title: "Contact"
       heading: "Contact"
       first_paragraph: "Contact the Ruby on Rails Tutorial about the sample
-      app at the"
+        app at the"
       hyperlink: "contact page"
