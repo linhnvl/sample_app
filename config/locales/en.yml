@@ -1,4 +1,16 @@
 en:
+  sessions:
+    new:
+      title: "Log in"
+      heading: "Log in"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      button: "Log in"
+      paragraph: "New user? "
+      hyperlink: "Sign up now!"
+    create:
+      flash_danger: "Invalid email/password combination"
   shared:
     errors: "The form contains "
     errors_count:
@@ -18,6 +30,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "Users"
+      account_html: "Account <b class='caret'></b>"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
   helper:
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
