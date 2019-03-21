@@ -5,7 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
+gem "config"
 gem "rails-controller-testing"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
