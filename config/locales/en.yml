@@ -1,14 +1,34 @@
 en:
+  layouts:
+    footer:
+      paragraph1: "The "
+      link1: "Ruby on Rails Tutorial "
+      paragraph2: "by "
+      link2: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
+    header:
+      sample_app: "sample_app"
+      home: "Home"
+      help: "Help"
+      log_in: "Log in"
   helper:
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
+  users:
+    new:
+      title: "Sign up"
+      heading: "Sign up"
+      paragraph: "This will be a signup page for new users."
   static_pages:
     home:
       title: "Home"
-      heading: "Sample App"
-      first_paragraph: "This is the home page for the "
-      hyperlink: "Ruby on Rails Tutorial"
+      heading: "Welcome to the Sample App"
+      first_paragraph: "This is the home page for the"
+      hyperlink1: "Ruby on Rails Tutorial"
       last_paragraph: "sample application."
+      hyperlink2: "Sign up now!"
     about:
       title: "About"
       heading: "About"
