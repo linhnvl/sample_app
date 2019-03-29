@@ -52,8 +52,31 @@ en:
       password_confirmation: "Password Confirmation"
     create:
       flash_success: "Welcome to the Sample App!"
-    show:
-      flash_success: "User not found!"
+    load_user:
+      flash_danger: "User not found!"
+    edit:
+      title: "Edit user"
+      heading: "Update your profile"
+      button: "Save changes"
+      change: "change"
+    update:
+      flash_success: "Profile updated"
+    destroy:
+      flash_success: "User deleted"
+      flash_danger: "Delete failed"
+    logged_in_user:
+      please_log_in: "Please log in"
+    index:
+      title: "All users"
+      heading: "All users"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
       title: "Home"

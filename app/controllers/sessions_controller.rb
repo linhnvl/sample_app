@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       params[:session][:remember_me] ==
         Settings.app.sessions_controllers.yes_remember_me ?
         remember(@user) : forget(@user)
-      redirect_to @user
+      redirect_back_or @user
     else
       flash.now[:danger] = t ".password"
       render :new
