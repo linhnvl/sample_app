@@ -1,0 +1,15 @@
+one:
+  follower: linh
+  followed: lana
+
+two:
+  follower: linh
+  followed: malory
+
+three:
+  follower: lana
+  followed: linh
+
+four:
+  follower: tam
+  followed: linh

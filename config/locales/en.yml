@@ -29,6 +29,9 @@ en:
       microposts_count:
         one: "1 micropost."
         other: "%{count} microposts."
+    stats:
+      following: "following"
+      followers: "followers"
   layouts:
     footer:
       paragraph1: "The "
@@ -88,6 +91,19 @@ en:
     user:
       delete: "delete"
       confirm: "You sure?"
+    show:
+      microposts: "Microposts"
+    follow:
+      follow_button: "Follow"
+    unfollow:
+      unfollow_button: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Microposts: "
+    following:
+      following_title: "Following"
+    followers:
+      followers_title: "Followers"
   static_pages:
     home:
       title: "Home"
@@ -164,3 +180,5 @@ en:
       flash_danger: "Micropost not found"
   javascript:
     picture_size: "Maximum file size is 5MB. Please choose a smaller file."
+  relationships:
+    flash_danger: "User not found"
