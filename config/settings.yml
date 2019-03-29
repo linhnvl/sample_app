@@ -7,6 +7,12 @@ app:
   yes_remember_me: "1"
   users_helper:
     size: 80
+  micropost_models:
+    content_maximum: 140
+    picture_size: 5
+  gravatar_for:
+    size: 50
+  per_page: 10
 config:
   production:
     host: "<your heroku app>.herokuapp.com"

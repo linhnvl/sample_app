@@ -16,10 +16,19 @@ en:
       message1: "Account not activated. "
       message2: "Check your email for the activation link"
   shared:
-    errors: "The form contains "
-    errors_count:
-      one: "1 error."
-      other: "%{count} errors."
+    error_messages:
+      errors: "The form contains "
+      errors_count:
+        one: "1 error."
+        other: "%{count} errors."
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      button: "Post"
+    user_info:
+      view_my_profile: "view my profile"
+      microposts_count:
+        one: "1 micropost."
+        other: "%{count} microposts."
   layouts:
     footer:
       paragraph1: "The "
@@ -87,6 +96,7 @@ en:
       hyperlink1: "Ruby on Rails Tutorial"
       last_paragraph: "sample application."
       hyperlink2: "Sign up now!"
+      h3: "Micropost Feeds"
     about:
       title: "About"
       heading: "About"
@@ -138,3 +148,19 @@ en:
       flash_danger: "Password reset has expired"
     load_user:
       flash_danger: "Email address not found"
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: "ago."
+      delete: "delete"
+      confirm: "You sure?"
+      picture_size: "should be less than 5MB"
+    create:
+      flash_success: "Micropost created!"
+    destroy:
+      flash_success: "Micropost deleted"
+      flash_danger: "Delete failed"
+    load_micropost:
+      flash_danger: "Micropost not found"
+  javascript:
+    picture_size: "Maximum file size is 5MB. Please choose a smaller file."
