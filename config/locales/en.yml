@@ -9,8 +9,10 @@ en:
       button: "Log in"
       paragraph: "New user? "
       hyperlink: "Sign up now!"
+      span: "Remember me on this computer"
     create:
-      flash_danger: "Invalid email/password combination"
+      password: "Invalid email/password combination"
+      email: "Invalid email"
   shared:
     errors: "The form contains "
     errors_count:
