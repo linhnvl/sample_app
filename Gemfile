@@ -13,7 +13,7 @@ gem "faker", "1.7.3"
 gem "jquery-rails", "4.3.1"
 gem "rails-controller-testing"
 gem "rails-i18n"
-gem "rubocop", "~> 0.66.0", require: false
+gem "rubocop", "~> 0.54.0", require: false
 gem "will_paginate", "3.1.6"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"

@@ -5,7 +5,7 @@ en:
       heading: "Log in"
       email: "Email"
       password: "Password"
-      password_confirmation: "Password Confirmation"
+      forgot_password: "(forgot password)"
       button: "Log in"
       paragraph: "New user? "
       hyperlink: "Sign up now!"
@@ -13,6 +13,8 @@ en:
     create:
       password: "Invalid email/password combination"
       email: "Invalid email"
+      message1: "Account not activated. "
+      message2: "Check your email for the activation link"
   shared:
     errors: "The form contains "
     errors_count:
@@ -51,7 +53,7 @@ en:
       password: "Password"
       password_confirmation: "Password Confirmation"
     create:
-      flash_success: "Welcome to the Sample App!"
+      flash_info: "Please check your email to activate your account."
     load_user:
       flash_danger: "User not found!"
     edit:
@@ -110,3 +112,14 @@ en:
       first_paragraph: "Contact the Ruby on Rails Tutorial about the sample
         app at the"
       hyperlink: "contact page"
+  user_mailer:
+    activate: "Activate"
+  password_resets:
+    new:
+      title: "Forgot password"
+      heading: "Forgot password"
+      button: "Submit"
+      email: "Email"
+    create:
+      flash_info: "Email sent with password reset instructions"
+      flash_danger: "Email address not found"
