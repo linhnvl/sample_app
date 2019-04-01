@@ -5,3 +5,5 @@ app:
     password_minimum: 6
   sessions_controllers:
     yes_remember_me: "1"
+  users_helper:
+    size: 80
