@@ -3,7 +3,14 @@ app:
     name_maximum: 50
     email_maximum: 255
     password_minimum: 6
-  sessions_controllers:
-    yes_remember_me: "1"
+  yes_remember_me: "1"
   users_helper:
     size: 80
+config:
+  production:
+    host: "<your heroku app>.herokuapp.com"
+    address: "smtp.sendgrid.net"
+    port: "587"
+    user_name: "SENDGRID_USERNAME"
+    password: "SENDGRID_PASSWORD"
+    domain: "heroku.com"
