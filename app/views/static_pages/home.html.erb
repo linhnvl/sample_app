@@ -1,13 +1,30 @@
-<% provide(:title, t(".title")) %>
-<div class="center jumbotron">
-  <h1><%= t ".heading" %></h1>
-  <h2>
-    <%= t ".first_paragraph" %>
-    <%= link_to t(".hyperlink1"), "https://www.railstutorial.org/" %>
-    <%= t ".last_paragraph" %>
-  </h2>
-  <%= link_to t(".hyperlink2"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".h3" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <% provide(:title, t(".title")) %>
+  <div class="center jumbotron">
+    <h1><%= t ".heading" %></h1>
+    <h2>
+      <%= t ".first_paragraph" %>
+      <%= link_to t(".hyperlink1"), "https://www.railstutorial.org/" %>
+      <%= t ".last_paragraph" %>
+    </h2>
+    <%= link_to t(".hyperlink2"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
 
-<%= link_to image_tag("https://thinkster.io/assets/homepage/rails-9b13de39de9d2eed10a2418734ee1e584cdc9634c04206af1c2bfcc8b0d0e3d5.png",
-alt: "Rails logo"), "http://rubyonrails.org/" %>
+  <%= link_to image_tag("https://thinkster.io/assets/homepage/rails-9b13de39de9d2eed10a2418734ee1e584cdc9634c04206af1c2bfcc8b0d0e3d5.png",
+  alt: "Rails logo"), "http://rubyonrails.org/" %>
+<% end %>
