@@ -3,6 +3,7 @@ app:
     name_maximum: 50
     email_maximum: 255
     password_minimum: 6
+    time_expired: 2
   yes_remember_me: "1"
   users_helper:
     size: 80

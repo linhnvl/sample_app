@@ -114,6 +114,8 @@ en:
       hyperlink: "contact page"
   user_mailer:
     activate: "Activate"
+    account_activation: "Account activation"
+    password_reset: "Password reset"
   password_resets:
     new:
       title: "Forgot password"
@@ -122,4 +124,17 @@ en:
       email: "Email"
     create:
       flash_info: "Email sent with password reset instructions"
+      flash_danger: "Email address not found"
+    edit:
+      title: "Reset password"
+      heading: "Reset password"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      button: "Update password"
+    update:
+      password_empty: "can't be empty"
+      flash_success: "Password has been reset."
+    check_expiration:
+      flash_danger: "Password reset has expired"
+    load_user:
       flash_danger: "Email address not found"
