@@ -12,12 +12,12 @@ app:
     picture_size: 5
   gravatar_for:
     size: 50
+    size_30: 30
   per_page: 10
 config:
   production:
-    host: "<your heroku app>.herokuapp.com"
-    address: "smtp.sendgrid.net"
+    host: "linhnv-sample-app.herokuapp.com"
+    address: "smtp.gmail.com"
     port: "587"
-    user_name: "SENDGRID_USERNAME"
-    password: "SENDGRID_PASSWORD"
-    domain: "heroku.com"
+    user_name: "dragonballlegend0111@gmail.com"
+    password: "son_goku"

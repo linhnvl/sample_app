@@ -66,17 +66,27 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = t "config.production.host"
+  host = Settings.config.production.host # Local server
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :address        => t "config.production.address",
-    :port           => t "config.production.port",
-    :authentication => :plain,
-    :user_name      => ENV[t "config.production.user_name"],
-    :password       => ENV[t "config.production.password"],
-    :domain         => t "config.production.domain",
-    :enable_starttls_auto => true
+  config.action_mailer.smtp_settings = {
+     :address => Settings.config.production.address,
+     :port => Settings.config.production.port,
+     :user_name => Settings.config.production.user_name,
+     :password => Settings.config.production.password,
+     :authentication => :plain,
+     :enable_starttls_auto => true
   }
+  # host = Settings.config.production.host
+  # config.action_mailer.default_url_options = { host: host }
+  # ActionMailer::Base.smtp_settings = {
+  #   :address        => Settings.config.production.address,
+  #   :port           => Settings.config.production.port,
+  #   :authentication => :plain,
+  #   :user_name      => ENV[Settings.config.production.user_name],
+  #   :password       => ENV[Settings.config.production.password],
+  #   :domain         => Settings.config.production.domain,
+  #   :enable_starttls_auto => true
+  # }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
