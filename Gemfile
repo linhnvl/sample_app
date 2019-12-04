@@ -13,7 +13,7 @@ gem "config"
 gem "faker", "1.7.3"
 gem "i18n-js"
 gem "jquery-rails", "4.3.1"
-gem "mini_magick", "4.7.0"
+gem "mini_magick", "4.9.4"
 gem "rails-controller-testing"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
